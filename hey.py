@@ -1,6 +1,12 @@
 import random
-r = random.randint(1, 100)
+start = input('初始值')
+end = input('結束值')
+start = int(start)
+end = int(end)
+r = random.randint(start, end)
+count = 0
 while True:
+	count += 1 
 	num = input('請輸入')
 	num = int(num)
 	if num == r:
@@ -10,3 +16,4 @@ while True:
 		print('太大')
 	elif num < r:
 		print('太小')
+	print('這是你猜的地', count ,'次' )
